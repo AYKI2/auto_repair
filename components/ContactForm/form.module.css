@@ -1,0 +1,94 @@
+.formDiv {
+    height: 45em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    padding: 4em 0 3em 0;
+    font-family: 'Chau Philomene One';
+    text-align: center;
+}
+
+.formHr {
+    margin: 0 auto;
+    width: 15%;
+    border: 1px solid rgb(161, 11, 11);
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 4em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.contactLabel {
+    padding: .5em;
+    margin: .4em auto;
+    width: 65%;
+}
+
+.contactInput {
+    padding: .5em 0;
+    padding-left: 1em;
+    margin: .4em auto;
+    width: 65%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.contactTextarea {
+    resize: none;
+}
+
+.contactSubmit {
+    width: 30%;
+    margin: .4em auto;
+    padding: .5em 0;
+    border: 2px solid rgba(31, 31, 31, 0.801);
+    border-radius: 14px;
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+.formCharCounter {
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.submitMessage {
+    text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+    .contactLabel,
+    .contactInput {
+        width: 75%;
+    }
+
+    .contactSubmit {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .heading {
+        padding: 4em 0 2em 0;
+    }
+
+    .formHr {
+        width: 5%;
+    }
+
+    .contactLabel,
+    .contactInput {
+        width: 45%;
+    }
+
+    .contactSubmit {
+        width: 15%;
+    }
+}

@@ -1,0 +1,116 @@
+.formDiv {
+    height: 45em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8rem;
+}
+
+.heading {
+    padding: 3em 0 1.5em 0;
+    font-family: 'Chau Philomene One';
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.formHr {
+    margin: 0 auto;
+    width: 25%;
+    border: 1px solid rgb(161, 11, 11);
+}
+
+.formLabel {
+    margin: .4em auto;
+    width: 65%;
+}
+
+.formInput {
+    padding: .5em 0;
+    padding-left: 1em;
+    margin: .4em auto;
+    width: 65%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.formTextArea {
+    resize: none;
+}
+
+.formCharCounter {
+    padding: 0 1em;
+}
+
+.dateDiv {
+    margin: 0 auto;
+}
+
+.dateInput {
+    padding-left: 0em;
+    margin: .4em auto;
+    width: 65%;
+}
+
+.bookingSubmit {
+    width: 30%;
+    margin: .4em auto;
+    padding: .5em 0;
+    border: 2px solid rgba(31, 31, 31, 0.801);
+    border-radius: 14px;
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 400px) {
+    .formDiv{
+        margin-bottom: 10rem;
+    }
+
+    .formLabel,
+    .formInput {
+        width: 75%;
+    }
+
+    .formTextArea {
+        padding: 1.25em;
+    }
+
+    .bookingSubmit {
+        width: 40%;
+        padding: .5em 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .heading {
+        padding: 4em 0 3em 0;
+    }
+
+    .formDiv{
+        margin-bottom: 15rem;
+    }
+
+    .formHr {
+        width: 5%;
+    }
+
+    .formLabel {
+        width: 45%;
+        padding: 0.5em 0;
+    }
+
+    .formInput,
+    .dateInput {
+        width: 45%;
+    }
+
+    .bookingSubmit {
+        width: 15%;
+    }
+}

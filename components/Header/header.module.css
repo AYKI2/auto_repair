@@ -1,0 +1,210 @@
+ /* 🔥🔥 Header 🔥🔥  */
+.header{
+  width: 100%;
+  height: 100px;
+  display: block;
+  background-color: var(--main-red);
+  position: fixed;
+  z-index: 100;
+}
+
+.topHeader{
+  width: 100%;
+  height: 25px;
+  background-color: black;
+  text-align: center;
+}
+
+.modalText{
+  color: #fff;
+  height: 100%;
+  display: inline-block;
+}
+
+.modalText span {
+  cursor: pointer;
+}
+
+.modalText span:hover{
+  text-decoration: underline;
+}
+
+#transition-modal-title {
+  padding-bottom: 1rem;
+}
+
+.innerHeader{
+  width: 90%;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  z-index: 500;
+}
+
+.logoContainer{
+  height: 60px;
+  width: 150px;
+  top: 33%;
+  position: absolute;
+  float: left;
+  background-image: url('../../public/images/Innovation_Logo-no-bg-white.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+} 
+
+.navigation{
+  float: right;
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navigation > a {
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation a:last-child {
+  padding-right: 0;
+}
+
+.navigation > a li{
+  font-family: 'Source Sans Pro', sans-serif;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  color: white;
+  font-size: 20px;
+  transition: .3s ease-in-out;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.navigation li:hover {
+  transition: .3s ease-in-out;
+  transform: scale(1.05);
+  transform-origin: center;
+  opacity: 1;
+}
+
+/*  🔥🔥 Hamburger 🔥🔥 */
+.navHolder{
+  float: right;
+  height: 100%;
+  display: table;
+  padding-top: 25px;
+}
+
+.hamburgerMenu {
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: all 0.2s;
+  z-index: 2;
+}
+
+.rotate1 {
+  transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+
+.rotate2 {
+  opacity: 0;
+}
+
+.rotate3 {
+  transform: rotateZ(405deg) translate(-8px, -6px);
+}
+
+/* 🔥🔥 Sidebar 🔥🔥*/
+.sidebar {
+  background-color: var(--main-red);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right .2s cubic-bezier(1, 0, 0, 1);
+  z-index: 50;
+}
+
+.change {
+  right: 0;
+}
+
+.navList {
+  text-align: center;
+}
+
+.navItem {
+  list-style: none;
+  margin: 25px;
+  transition: .3s ease-in-out;
+}
+
+.navItem:hover {
+  transition: .3s ease-in-out;
+  transform: scale(1.05);
+}
+
+.navLink { 
+  font-family: 'Source Sans Pro';
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navLink:hover {
+  opacity: 80%;
+}
+
+/* ===== ❗🔥🔥🔥 media query 🔥🔥🔥❗ ===== */
+@media (max-width: 850px) {
+  .hamburgerMenu {
+      display: flex;
+  }
+
+  .navigation a li {
+      display: none;
+  }
+
+  .navigation{
+    float: right;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .navItem {
+    color: white;
+  }
+
+  .navLink:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.learnLink { 
+  text-decoration: underline;
+  color: lightblue;
+}
